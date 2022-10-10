@@ -12,7 +12,7 @@ resource "aws_launch_template" "ec2lauchtemplate" {
   tag_specifications {
     resource_type = "instance"
     tags = {
-      Name = "Web Server"
+      Name = "launch Web Server"
     }
   }
 }
