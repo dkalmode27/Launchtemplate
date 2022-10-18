@@ -12,8 +12,3 @@ output "instance_type" {
   description = "launchconfig instance id"
   value = aws_launch_template.ec2lauchtemplate.instance_type
 }
-
-output "image_id" {
-  description = "launchconfig instance id"
-  value = aws_launch_template.ec2lauchtemplate.image_id
-}
