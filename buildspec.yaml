@@ -26,7 +26,6 @@ phases:
   build:
     on-failure: ABORT   
     commands:
-      - ls -lrt "Launchtemplate"
       - terraform --version
       - terraform init -input=false
       - terraform validate
