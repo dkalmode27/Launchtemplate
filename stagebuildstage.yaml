@@ -34,4 +34,4 @@ phases:
   post_build:
     on-failure: CONTINUE   
     commands:
-      - echo terraform execution completed on `date`  
+      - echo terraform execution completed on `date`
