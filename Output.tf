@@ -8,7 +8,7 @@ output "latestversion" {
   value = aws_launch_template.ec2lauchtemplate.latest_version
 }
 
-output "latestversion" {
+output "instance type" {
   description = "launchconfig instance id"
   value = aws_launch_template.ec2lauchtemplate.instance_type
 }
