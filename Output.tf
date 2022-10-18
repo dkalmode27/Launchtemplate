@@ -7,3 +7,8 @@ output "latestversion" {
   description = "launchconfig id to be referred in autoscaling group"
   value = aws_launch_template.ec2lauchtemplate.latest_version
 }
+
+output "latestversion" {
+  description = "launchconfig instance id"
+  value = aws_launch_template.ec2lauchtemplate.instance_type
+}
