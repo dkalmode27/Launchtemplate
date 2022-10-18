@@ -4,4 +4,4 @@ terraform {
     key    = "network/ec2launchlemplate/terraform.tfstate"
     region = "us-east-2"  
   }
-}
+}  
