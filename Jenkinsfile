@@ -31,7 +31,7 @@ pipeline {
             steps {
                 input 'Create test infrastructure ?'
                 milestone(1)
-                sh 'terraform apply -auto-approve'
+                sh 'terraform destroy -auto-approve'
             }
         }
     }
