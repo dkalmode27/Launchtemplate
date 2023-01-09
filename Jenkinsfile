@@ -15,22 +15,20 @@ pipeline {
             }
         }
         
-        stage("Terraform init") {
+        stage("Initialize terraform") {
             steps {
                 sh 'terraform init'
             }
         }
         
-        stage("Terraform validate") {
+        stage("Validate conf. files") {
             steps {
                 sh 'terraform validate'
             }
         }
         
-        stage("Terraform apply") {
+        stage("Apply terraform conf. changes") {
             steps {
-                input 'Create test infrastructure ?'
-                milestone(1)
                 sh 'terraform destroy -auto-approve'
             }
         }
