@@ -3,7 +3,7 @@ resource "aws_launch_template" "ec2lauchtemplate" {
   update_default_version = true
   image_id               = data.aws_ami.amazon-linux-2.image_id
   instance_type          = var.instancetype
-  vpc_security_group_ids = [data.terraform_remote_state.instancesg.outputs.instancesgid]
+  vpc_security_group_ids = [aws_security_group.kubeec2instancesg.id]
   key_name               = var.keyname
   user_data              = filebase64("./user_data.sh")
   tags = {
