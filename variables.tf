@@ -1,7 +1,7 @@
 variable "instancetype" {
   description = "instance type to be launched"
   type        = string
-  default     = "t2.micro"
+  default     = "t2.medium"
 }
 
 variable "keyname" {
